@@ -5,8 +5,8 @@ from data_sources.gem_scraper import fetch_gem_tenders
 from data_sources.state_scraper import fetch_state_tenders
 from matching.matcher import match_tender_to_profile
 from data_sources.utils import extract_text_from_pdf, extract_scope_from_url
-# from notifications.email_notifier import send_email_notification
-# from notifications.sms_notifier import send_sms_notification
+from notifications.email_notifier import send_email_notification
+from notifications.sms_notifier import send_sms_notification
 
 st.title("Government Tender Tracker & Bid-Match Recommender")
 
